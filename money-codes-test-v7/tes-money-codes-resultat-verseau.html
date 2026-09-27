@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Tes Money Codes — Ascendant Verseau</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap');
+:root{--bg:#0b090a;--bg2:#120d10;--text:#f7efef;--muted:#c9b9bd;--rose:#e9a8b4;--rose2:#f4c6ce;--line:rgba(233,168,180,.22)}
+*{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at 85% 8%,rgba(233,168,180,.09),transparent 25%),var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;font-weight:300}
+.wrap{width:min(1040px,calc(100% - 38px));margin:auto}.hero{padding:82px 0 70px}.eyebrow{font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--rose)}
+h1,h2,h3{font-family:"Playfair Display",serif;margin:0;font-weight:500}h1{font-size:clamp(55px,8vw,100px);line-height:.98;margin:22px 0}.sub{font-size:21px;line-height:1.6;color:var(--muted);max-width:760px}
+.axis{display:grid;grid-template-columns:1fr 80px 1fr;align-items:center;margin-top:55px}.sign{border:1px solid var(--line);border-radius:25px;padding:30px;background:rgba(255,255,255,.02)}.sign .house{font-size:11px;letter-spacing:.18em;color:var(--rose);text-transform:uppercase}.sign h3{font-size:34px;margin:9px 0}.sign p{color:var(--muted);line-height:1.55;margin-bottom:0}.arrow{text-align:center;color:var(--rose);font-size:30px}
+.section{padding:90px 0;border-top:1px solid rgba(255,255,255,.06)}h2{font-size:clamp(39px,5.5vw,68px);line-height:1.05;max-width:850px}.intro{font-size:18px;line-height:1.7;color:var(--muted);max-width:780px;margin:24px 0 42px}.callout{font-family:"Playfair Display",serif;font-size:28px;line-height:1.35;color:var(--rose2);border-left:2px solid var(--rose);padding-left:22px;margin:36px 0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.card{border:1px solid var(--line);border-radius:22px;padding:30px;background:linear-gradient(145deg,rgba(255,255,255,.025),rgba(233,168,180,.025))}.card h3{font-size:27px;margin-bottom:15px}.card p,.card li{color:var(--muted);line-height:1.65}.card ul{padding-left:19px}.examples{display:grid;gap:12px;margin-top:28px}.example{padding:15px 18px;border-left:1px solid var(--rose);background:rgba(255,255,255,.018);color:#ded0d3}
+.code{padding:42px;border:1px solid var(--line);border-radius:28px;background:var(--bg2)}.code h3{font-size:34px;margin-bottom:18px}.code p{font-size:18px;line-height:1.7;color:var(--muted)}.fine{font-size:13px;color:#9c898e;line-height:1.6;margin-top:25px}.deeper-note{max-width:540px;margin:18px 0 0 auto;text-align:right;font-size:12px;line-height:1.55;color:#9c898e}.deeper-note strong{color:#c9b9bd;font-weight:600}.big-bold{font-size:18px!important;color:var(--text)!important;margin-top:24px}.block-title{text-decoration:underline;text-decoration-color:var(--rose);text-decoration-thickness:2px;text-underline-offset:5px;color:var(--text)!important}
+.cta{padding:95px 0}.cta-box{border:1px solid var(--line);border-radius:30px;padding:48px;background:radial-gradient(circle at 90% 20%,rgba(233,168,180,.09),transparent 30%),var(--bg2)}.cta-box p{font-size:18px;line-height:1.75;color:var(--muted);max-width:800px}.btn{display:inline-block;margin-top:15px;padding:16px 25px;border-radius:999px;background:linear-gradient(100deg,var(--rose2),#f0aeb9);color:#160d10;text-decoration:none;font-weight:600}
+footer{padding:35px 0 55px;text-align:right;color:#c9b9bd;font-size:16px;font-weight:600}
+@media(max-width:720px){.axis,.grid{grid-template-columns:1fr}.arrow{transform:rotate(90deg);height:48px}.hero{padding-top:62px}.section{padding:70px 0}.code,.cta-box{padding:28px}}
+.value-highlight{margin-top:34px;border:1px solid var(--line);border-radius:26px;padding:34px;background:radial-gradient(circle at 100% 0,rgba(233,168,180,.08),transparent 34%),rgba(255,255,255,.018)}
+.value-kicker{font-size:11px;font-weight:600;letter-spacing:.18em;color:var(--rose);margin-bottom:13px}
+.value-highlight>h3{font-size:30px;line-height:1.25;max-width:800px;margin-bottom:14px}
+.value-highlight>p{font-size:17px;line-height:1.65;color:var(--muted);max-width:820px}
+.value-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+.value-grid>div{padding:22px;border:1px solid rgba(233,168,180,.14);border-radius:18px;background:rgba(0,0,0,.13)}
+.value-grid span{display:block;color:var(--rose);font-size:11px;font-weight:600;letter-spacing:.15em;margin-bottom:12px}
+.value-grid strong{display:block;font-size:16px;line-height:1.45;color:var(--text)}
+.value-grid p{font-size:14px;line-height:1.6;color:var(--muted);margin:10px 0 0}
+.value-bottom{margin-top:20px;padding-top:20px;border-top:1px solid var(--line);font-size:17px;line-height:1.6;color:var(--rose2)}
+@media(max-width:720px){.value-grid{grid-template-columns:1fr}}
+.bio-alpha{padding:72px 0 24px}.bio-alpha-box{display:grid;grid-template-columns:minmax(220px,.72fr) minmax(0,1.55fr);gap:38px;align-items:center;padding:34px;border:1px solid rgba(233,168,180,.20);border-radius:28px;background:linear-gradient(145deg,rgba(233,168,180,.075),rgba(255,255,255,.018))}.bio-photo{min-height:380px;overflow:hidden;padding:0;border-radius:22px;border:1px solid rgba(233,168,180,.20);background:radial-gradient(circle at 50% 35%,rgba(233,168,180,.16),rgba(11,9,10,.72) 68%),#151012;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;color:#bcaeb1;font-size:12px;letter-spacing:.12em;text-transform:uppercase}.bio-photo img{width:100%;height:100%;min-height:380px;object-fit:cover;object-position:center 34%;border-radius:22px;display:block}.bio-alpha h2{margin:7px 0 17px}.bio-alpha p{margin:0 0 15px;color:#e8dfe1}.places-note{margin:28px 0 26px;padding:22px 24px;border-left:3px solid #e9a8b4;background:rgba(233,168,180,.075);border-radius:0 18px 18px 0}.places-note strong{color:#f4c6ce}.places-note p{margin:0 0 10px}.places-note p:last-child{margin-bottom:0}@media(max-width:760px){.bio-alpha-box{grid-template-columns:1fr}.bio-photo{min-height:310px}.bio-alpha{padding-top:52px}}
+
+.origin-cta-row{display:flex;justify-content:space-between;align-items:center;gap:18px;width:100%;margin-top:22px}
+.origin-cta-row .cta{margin:0}
+@media(max-width:720px){.origin-cta-row{gap:10px}.origin-cta-row .cta{font-size:12px;padding:13px 14px}}
+
+
+.download-result{padding:8px 0 54px}
+.download-result .download-box{text-align:center;padding:28px;border:1px solid rgba(233,168,180,.20);border-radius:24px;background:rgba(233,168,180,.045)}
+.download-result .download-box p{margin:0 0 18px;color:#cfc2c5}
+.download-result .btn{margin:0}
+
+
+.candidate-cta-group{display:flex;flex-direction:column;align-items:flex-end;gap:9px}
+.candidate-reassurance{margin:0;max-width:360px;text-align:right;font-size:6px;line-height:1.4;color:#cfc3c6;font-weight:400}
+@media(max-width:720px){
+  .origin-cta-row{align-items:flex-start}
+  .candidate-cta-group{align-items:flex-end}
+  .candidate-reassurance{font-size:5.75px;max-width:250px;text-align:right}
+}
+
+
+.candidate-cta-group .candidate-reassurance{
+  margin:0 !important;
+  max-width:360px !important;
+  text-align:right !important;
+  font-size:8px !important;
+  line-height:1.35 !important;
+  color:#cfc3c6 !important;
+  font-weight:400 !important;
+}
+@media(max-width:720px){
+  .candidate-cta-group .candidate-reassurance{
+    font-size:8px !important;
+    max-width:250px !important;
+  }
+}
+
+</style>
+</head>
+<body>
+<section class="hero"><div class="wrap">
+<div class="eyebrow">TES MONEY CODES</div>
+<h1>Ascendant Verseau</h1>
+<p class="sub"><strong>Avec ton Ascendant Verseau, voilà comment fonctionne ton propre code de richesse.</strong><br/><br/>
+D’un côté, tu as une capacité assez dingue à <strong>capter, ressentir, imaginer ou voir des choses que les autres ne voient pas forcément.</strong><br/><br/>
+De l’autre, ce qui prend vraiment de la valeur aux yeux des autres, c’est ta capacité à <strong>rendre tout ça clair, précis, concret et utilisable.</strong><br/><br/>
+Et c’est justement là que ça peut coincer : <strong>tu peux avoir énormément de valeur sans réussir à la transformer en autant d’argent qu’elle pourrait réellement t’en rapporter.</strong></p>
+<div class="axis">
+<div class="sign"><div class="house">Maison 2</div><h3>Poissons</h3><p>Ce que tu as entre les mains pour créer ta propre richesse.</p></div>
+<div class="arrow">↔</div>
+<div class="sign"><div class="house">Maison 8</div><h3>Vierge</h3><p>Ce que les autres peuvent reconnaître comme particulièrement précieux chez toi.</p></div>
+</div>
+</div></section>
+<section class="section"><div class="wrap">
+<div class="eyebrow">MONEY CODE 01 · MAISON 2</div>
+<h2>Ce qui peut réellement te rapporter de l’argent.</h2>
+<p class="intro">Avec les Poissons ici, ta richesse ne se trouve pas forcément dans le talent le plus facile à inscrire sur un CV. Elle peut justement se trouver dans ce que tu fais de manière tellement intuitive que tu ne réalises même pas que tout le monde n’en est pas capable. Tu peux capter une ambiance, une émotion, une possibilité ou une information difficile à expliquer rationnellement, puis en faire quelque chose qui aide, inspire, crée ou transforme.</p>
+<div class="grid">
+<div class="card"><h3>Ce que tu peux monétiser</h3><ul><li>Sentir rapidement ce qui se joue, parfois avant même que les autres aient réussi à mettre des mots dessus.</li><li>Voir ce que les autres ne voient pas encore : une possibilité, une nuance, un besoin ou une direction.</li><li>Créer à partir d’une intuition, d’une vision, d’une émotion ou d’un imaginaire.</li><li>Donner une forme, un sens ou une direction à quelque chose qui était encore flou.</li><li>Créer une expérience qui touche, inspire, apaise ou fait voir les choses autrement.</li><li>Utiliser ta sensibilité comme une véritable source d’information plutôt que comme quelque chose qu’il faudrait mettre de côté.</li></ul><div class="mini-highlight">En gros : tu peux transformer l’invisible en quelque chose qui a de la valeur.</div></div>
+<div class="card"><h3>Là où tu peux te faire avoir</h3><ul><li>Considérer que ton talent ne vaut pas grand-chose parce qu’il est naturel chez toi.</li><li>Donner énormément gratuitement parce que tu as du mal à mesurer ce que vaut quelque chose d’intuitif ou d’immatériel.</li><li>Avoir du mal à expliquer précisément ce que tu apportes, et donc à le rendre facilement achetable.</li><li>Voir quelqu’un faire quelque chose de beaucoup plus basique que toi et gagner davantage.</li><li>Laisser tes prix, limites ou conditions devenir trop flous.</li><li>Croire parfois que si quelque chose est profondément inspiré, humain ou spirituel, l’argent devrait presque venir tout seul.</li></ul></div>
+</div>
+<div class="callout">Ton problème n’est donc pas de ne pas avoir quelque chose de suffisamment précieux. Il peut être de ne pas réaliser à quel point ce que tu fais naturellement ne l’est justement pas pour tout le monde.</div>
+<div class="deeper-note">Pour aller plus loin dans tes Money Codes, il faudrait aussi regarder <strong>Vénus</strong>, la maîtresse naturelle de la Maison 2, ainsi que <strong>Jupiter et Neptune</strong>, maîtres traditionnel et moderne des Poissons.</div>
+</div></section>
+<section class="section"><div class="wrap">
+<div class="eyebrow">MONEY CODE 02 · MAISON 8</div>
+<h2>Ce pour quoi les autres peuvent vraiment t’accorder de la valeur.</h2>
+<p class="intro">Et là, la Vierge change complètement la donne. Les autres ne paient pas seulement pour ta sensibilité, ton intuition ou ta vision. Ils accordent de la valeur à ta capacité à en faire quelque chose de <strong>clair, précis, utile et applicable.</strong></p>
+<div class="grid">
+<div class="card"><h3>Ce qui fait monter ta valeur</h3><ul>
+<li>Mettre de l’ordre dans le chaos.</li>
+<li>Repérer rapidement ce qui ne fonctionne pas.</li>
+<li>Affiner, structurer et améliorer.</li>
+<li>Trouver le détail qui change tout.</li>
+<li>Transformer une intuition en méthode.</li>
+<li>Transformer quelque chose de flou en résultat concret.</li>
+</ul></div>
+<div class="card"><h3>Quand les deux fonctionnent ensemble</h3><ul>
+<li>Les Poissons te donnent la vision, l’intuition et la capacité à capter l’invisible.</li>
+<li>La Vierge te permet de rendre cette valeur claire, précise et utilisable.</li>
+<li>Ce que tu ressens ou comprends intuitivement devient quelque chose que les autres peuvent identifier et valoriser.</li>
+</ul></div>
+</div>
+<div class="value-highlight">
+<div class="value-kicker">CONCRÈTEMENT, QU’EST-CE QUE ÇA VEUT DIRE ?</div>
+<h3>Les autres ne vont pas te payer simplement parce que tu es intuitive, sensible ou visionnaire.</h3>
+<p>Ils vont te payer parce que tu es capable de prendre tout ce que tu captes et d’en faire <strong>quelque chose de précis qui leur sert vraiment.</strong></p>
+<div class="value-grid">
+<div><span>01</span><strong>Tu ressens très vite ce qui se joue.</strong><p>Ta valeur, c’est d’arriver à mettre des mots dessus et à montrer clairement ce qu’il faut faire ensuite.</p></div>
+<div><span>02</span><strong>Tu vois une possibilité que les autres ne voient pas encore.</strong><p>Ta valeur, c’est de transformer cette vision en quelque chose de concret : une solution, une méthode, une création ou une direction.</p></div>
+<div><span>03</span><strong>Tu fais naturellement quelque chose que d’autres trouvent compliqué.</strong><p>Ta valeur, c’est justement cette facilité. Pas besoin de la rendre plus complexe pour qu’elle mérite d’être payée.</p></div>
+</div>
+<div class="value-bottom">Plus les autres comprennent clairement <strong>ce que ton talent change pour eux</strong>, plus il devient facile d’en percevoir la valeur.</div>
+</div>
+<div class="deeper-note">Pour aller plus loin dans tes Money Codes, il faudrait aussi regarder <strong>Pluton</strong>, le maître naturel de la Maison 8, ainsi que <strong>Mercure</strong>, maître de la Vierge.</div>
+</div></section>
+<section class="section"><div class="wrap">
+<div class="eyebrow">ET SI L’ARGENT BLOQUE ?</div>
+<h2>C’est souvent là que ça devient beaucoup plus intéressant.</h2>
+<p class="intro">Maintenant, avoir les bons codes ne veut pas dire que tu les exploites déjà. Et c’est là que ça devient intéressant : voilà ce qui peut aujourd’hui t’empêcher d’en tirer pleinement parti.</p>
+<div class="grid">
+<div class="card"><h3>Poissons en Maison 2</h3>
+<p class="block-title"><strong>LES BLOCAGES À SURVEILLER :</strong></p>
+<ul>
+<li><strong>Minimiser ton talent</strong> parce que ce qui est naturel chez toi te paraît banal.</li>
+<li><strong>Difficulté à mettre un prix</strong> sur quelque chose d’intuitif, de créatif, de spirituel ou d’immatériel.</li>
+<li><strong>Spiritualité VS argent</strong>, comme si être profondément spirituelle impliquait de ne pas vouloir gagner beaucoup d’argent.</li>
+<li><strong>Trop donner gratuitement</strong> parce que faire payer peut te donner l’impression d’enlever quelque chose à la pureté de ce que tu proposes.</li>
+<li><strong>Idéalisation · arnaques · désillusions</strong> et ne pas voir assez vite les signaux d’alerte, avec le risque de te faire avoir, arnaquer ou embarquer dans des collaborations financières floues.</li>
+<li><strong>Manque de limites avec l’argent</strong> : tarifs flous, arrangements à répétition, paiements repoussés ou difficulté à réclamer ce qui t’est dû.</li>
+<li><strong>Attendre que l’argent arrive tout seul</strong> sans poser suffisamment de cadre concret autour de ce que tu proposes.</li>
+</ul></div>
+<div class="card"><h3>Vierge en Maison 8</h3>
+<p class="block-title"><strong>LES BLOCAGES À SURVEILLER :</strong></p>
+<ul>
+<li><strong>Perfectionnisme</strong> avant de vendre, demander davantage ou te sentir réellement légitime.</li>
+<li><strong>Maniaquerie</strong> : reprendre, corriger, vérifier et peaufiner des détails que personne ne te demandait.</li>
+<li><strong>Focalisation sur les défauts</strong> au point de ne plus voir tout ce qui est déjà excellent dans ce que tu proposes.</li>
+<li><strong>Valeur = quantité de travail</strong> et avoir du mal à accepter d’être très bien payée pour quelque chose que tu fais rapidement.</li>
+<li><strong>En faire beaucoup trop</strong> que tu finis par en faire beaucoup trop pour le prix demandé.</li>
+<li><strong>Jamais terminé · jamais assez bien</strong> : il reste toujours un détail à améliorer, une compétence à acquérir ou quelque chose à corriger.</li>
+<li><strong>Épuisement · burn-out</strong>, jusqu’à transformer ton exigence en surcharge permanente, voire en burn-out.</li>
+</ul></div>
+</div>
+<div class="callout">Le piège, ici, est assez violent : d’un côté tu peux sous-estimer ou donner trop facilement ce qui a de la valeur chez toi. De l’autre, tu peux t’épuiser à vouloir prouver que cette valeur mérite vraiment d’être payée.</div>
+</div></section>
+<section class="section"><div class="wrap">
+<div class="code">
+<div class="eyebrow">MAINTENANT, ON CRAQUE TES CODES.</div>
+<h3>Tu n’as pas besoin d’en faire plus.</h3>
+<p>Et c’est justement le piège : croire que pour gagner plus, il faudrait encore travailler plus, apprendre plus, ajouter une compétence, créer une nouvelle offre ou prouver davantage ta valeur.</p>
+<p><strong>Non.</strong> Chez toi, le sujet n’est pas d’en rajouter. Le sujet, c’est d’arrêter de sous-estimer ce que tu as déjà entre les mains et de le rendre tellement clair que les autres comprennent immédiatement pourquoi ça a de la valeur.</p>
+<p>Parce que tu peux être excellente dans ce que tu fais et continuer à gagner beaucoup moins que ce que cette valeur pourrait réellement te rapporter.</p>
+<div class="fine">Et ce résultat n’est qu’une partie de tes Money Codes. Ton thème complet permet d’aller chercher les nuances qui n’apparaissent pas ici : ce qui amplifie ta richesse, ce qui la freine et surtout les mécanismes beaucoup plus personnels qui font que deux Ascendants Verseau ne vivront jamais exactement la même histoire avec l’argent.</div>
+</div>
+</div></section>
+
+
+<section class="bio-alpha"><div class="wrap"><div class="bio-alpha-box"><div class="bio-photo"><img src="aurelia-alkemia.png" alt="Aurélia, fondatrice de la Méthode ALKÉMIA"></div><div><div class="eyebrow">QUI SE CACHE DERRIÈRE ALKÉMIA ?</div><h2>Je suis Aurélia.</h2><p><strong>Experte en Reprogrammation Neuro-Identitaire et fondatrice de la Méthode ALKÉMIA.</strong></p><p>Je ne lis pas un thème astral pour te raconter qui tu es.</p><p>Je m’en sers comme d’une <strong>cartographie ultra-précise pour repérer ce qui est déjà codé chez toi : tes ressources, tes potentiels, mais aussi les programmes qui peuvent encore t’empêcher d’y accéder pleinement.</strong></p><p>Après 17 ans comme cadre territoriale et un burn-out qui a complètement rebattu les cartes, j’ai créé ALKÉMIA autour d’une conviction très simple : <strong>tu n’as pas besoin de devenir quelqu’un d’autre pour créer la vie que tu veux. Tu as besoin de te libérer de programmes qui ne t’appartiennent pas.</strong></p><p>Aujourd’hui, <strong>j’ai accompagné plus de 200 femmes</strong> à transformer les programmes qui les maintenaient dans les mêmes schémas pour leur permettre de <strong>déployer pleinement tous leurs potentiels.</strong></p></div></div></div></section>
+<section class="cta"><div class="wrap"><div class="cta-box">
+<div class="eyebrow">ET MAINTENANT ?</div>
+<h2>Voir ton code, c’est une chose. Pouvoir réellement l’exploiter, c’en est une autre.</h2>
+<p>Bon. Maintenant tu sais déjà beaucoup mieux ce que tu as entre les mains. Et si tu t’es reconnue dans certains blocages juste au-dessus, tu comprends aussi pourquoi savoir de quoi tu es capable ne suffit pas à changer ce qu’il se passe concrètement sur ton compte bancaire.</p>
+<p>Parce que tu peux avoir tous les talents du monde, si derrière tu continues à te sous-estimer, à avoir du mal à recevoir davantage, à croire que tu dois encore prouver quelque chose ou à répéter les mêmes schémas avec l’argent, tu vas continuer à plafonner.</p>
+<p>Et c’est précisément pour ça que j’ai créé <strong>ORIGINE</strong>. C’est mon accompagnement 100 % sur mesure. Je pars de ton thème pour aller chercher ce qui te bloque réellement, puis on va le libérer et le reprogrammer. Pas juste le comprendre. Pas passer six mois à tourner autour. <strong>On va le dégager.</strong></p>
+<p>Parce que mon objectif, ce n’est pas que tu repartes en te disant « ah oui, c’est intéressant ». Mon objectif, c’est que tu puisses atteindre absolument tous les rêves que tu as pour ta vie. Que tes ambitions arrêtent de te sembler complètement irréalistes ou irréalisables. Que gagner beaucoup d’argent, avoir le boulot que tu veux, vivre où tu veux et construire la vie dont tu rêves ne soient plus des trucs que tu regardes de loin. <strong>Je veux que ça puisse devenir ton quotidien.</strong></p>
+<div class="places-note">
+<p><strong>ORIGINE, c’est pour les femmes qui veulent que ça bouge enfin dans leur vie.</strong></p>
+<p>Celles qui ne veulent plus seulement comprendre leurs schémas. <strong>Elles veulent les dégager.</strong></p>
+<p>Et parce que c’est un travail à la fois <strong>intense et entièrement sur mesure</strong>, j’ai fait le choix de n’accompagner que <strong>5 nouvelles femmes chaque mois.</strong></p>
+<p>Si tu sens que tu pourrais être l’une d’elles, clique simplement sur le bouton ci-dessous pour candidater et <strong>je reviendrai personnellement vers toi pour qu’on puisse échanger.</strong></p>
+</div>
+<div class="origin-cta-row">
+<a class="btn" href="https://alkemia.netlify.app/origine">DÉCOUVRIR ORIGINE →</a>
+<div class="candidate-cta-group">
+<a href="#candidature-origine" class="btn">CANDIDATER POUR ORIGINE →</a>
+<p class="candidate-reassurance">Cette candidature ne t’engage à rien. Tu restes entièrement libre de rejoindre ORIGINE ou non après notre échange.</p>
+</div>
+</div>
+</div></div></section>
+
+<footer><div class="wrap">ALKÉMIA · Reprogrammation Neuro-Identitaire</div></footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  const buttons = Array.from(document.querySelectorAll('a')).filter(a =>
+    a.textContent.includes('CANDIDATER POUR ORIGINE')
+  );
+  buttons.forEach(function(btn){
+    btn.setAttribute('href','#');
+    btn.addEventListener('click', function(e){
+      e.preventDefault();
+      let lead = {};
+      try { lead = JSON.parse(localStorage.getItem('moneyCodesLead') || '{}'); } catch(e) {}
+      localStorage.setItem('origineCandidature', JSON.stringify({
+        prenom: lead.prenom || '',
+        email: lead.email || '',
+        telephone: lead.telephone || '',
+        ascendant: lead.ascendant || '',
+        offre: 'ORIGINE',
+        statut: 'candidature'
+      }));
+      const box = document.createElement('div');
+      box.style.cssText = 'margin:22px 0 0;padding:20px;border:1px solid rgba(233,168,180,.35);border-radius:18px;background:rgba(233,168,180,.07);text-align:center;color:#f4c6ce;font-weight:600;';
+      box.innerHTML = '✓ C’est envoyé.<br><span style="font-weight:400;color:#d7cbce">Je reviendrai personnellement vers toi pour qu’on puisse échanger.</span>';
+      const row = btn.closest('.origin-cta-row') || btn.parentElement;
+      if (!document.getElementById('origine-test-confirmation')) {
+        box.id = 'origine-test-confirmation';
+        row.insertAdjacentElement('afterend', box);
+      }
+      btn.textContent = 'CANDIDATURE ENVOYÉE ✓';
+      btn.style.pointerEvents = 'none';
+    });
+  });
+});
+</script>
+
+</body></html>
