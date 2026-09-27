@@ -131,7 +131,12 @@ footer .wrap{text-align:right}
 <h2>PRÊTE À CRAQUER TON PROPRE CODE ?</h2>
 <p class="intro">Entre tes informations et choisis ton Ascendant pour accéder à tes Money Codes.</p>
 </div>
-<form id="moneyCodesForm">
+<form data-netlify="true" data-netlify-honeypot="bot-field" id="moneyCodesForm" method="POST" name="money-codes-lead">
+<input name="form-name" type="hidden" value="money-codes-lead"/>
+<p style="position:absolute;overflow:hidden;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0">
+<label>Ne pas remplir : <input name="bot-field"/></label>
+</p>
+
 <label>Ton prénom</label>
 <input name="prenom" placeholder="Prénom" required=""/>
 <label>Ton email</label>
@@ -149,33 +154,45 @@ footer .wrap{text-align:right}
 <span>J’accepte de recevoir par email les contenus, actualités et offres d’ALKÉMIA. Je peux me désinscrire à tout moment.</span>
 </label>
 <button class="btn" type="submit">RÉVÈLE-MOI MES MONEY CODES →</button>
-
 </form>
 </div>
 </section>
 <footer><div class="wrap">ALKÉMIA · Reprogrammation Neuro-Identitaire</div></footer>
-
 <script>
-document.getElementById('moneyCodesForm').addEventListener('submit', function(e){
+document.getElementById('moneyCodesForm').addEventListener('submit', async function(e){
   e.preventDefault();
+  if (!this.reportValidity()) return;
   const asc = this.elements['ascendant'].value;
   const routes = {
     'Bélier':'belier','Taureau':'taureau','Gémeaux':'gemeaux','Cancer':'cancer',
     'Lion':'lion','Vierge':'vierge','Balance':'balance','Scorpion':'scorpion',
     'Sagittaire':'sagittaire','Capricorne':'capricorne','Verseau':'verseau','Poissons':'poissons'
   };
-  if (!this.reportValidity()) return;
   const data = {
-      prenom: this.elements['prenom']?.value || '',
-      email: this.elements['email']?.value || '',
-      telephone: this.elements['telephone']?.value || '',
-      ascendant: asc
-    };
-    localStorage.setItem('moneyCodesLead', JSON.stringify(data));
-    const slug = routes[asc];
-  if (slug) window.location.href = 'tes-money-codes-resultat-' + slug + '.html';
+    prenom: this.elements['prenom']?.value || '',
+    email: this.elements['email']?.value || '',
+    telephone: this.elements['telephone']?.value || '',
+    ascendant: asc
+  };
+  localStorage.setItem('moneyCodesLead', JSON.stringify(data));
+  const btn=this.querySelector('button[type="submit"]');
+  const original=btn.textContent;
+  btn.disabled=true; btn.textContent='ENVOI EN COURS…';
+  try{
+    const fd=new FormData(this);
+    const res=await fetch('/',{
+      method:'POST',
+      headers:{'Content-Type':'application/x-www-form-urlencoded'},
+      body:new URLSearchParams(fd).toString()
+    });
+    if(!res.ok) throw new Error('submission failed');
+    const slug=routes[asc];
+    if(slug) window.location.href='tes-money-codes-resultat-'+slug+'.html';
+  }catch(err){
+    btn.disabled=false; btn.textContent=original;
+    alert("Une erreur est survenue. Réessaie dans quelques instants.");
+  }
 });
 </script>
-
 </body>
 </html>

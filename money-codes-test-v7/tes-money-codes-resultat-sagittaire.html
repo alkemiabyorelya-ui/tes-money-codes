@@ -70,6 +70,17 @@ footer{padding:35px 0 55px;text-align:right;color:#c9b9bd;font-size:16px;font-we
 </style>
 </head>
 <body>
+<form data-netlify="true" data-netlify-honeypot="bot-field" method="POST" name="origine-candidature" style="position:absolute;overflow:hidden;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0">
+<input name="form-name" type="hidden" value="origine-candidature"/>
+<input name="prenom"/>
+<input name="email" type="email"/>
+<input name="telephone"/>
+<input name="ascendant"/>
+<input name="offre"/>
+<input name="statut"/>
+<input name="bot-field"/>
+</form>
+
 <section class="hero"><div class="wrap">
 <div class="eyebrow">TES MONEY CODES</div>
 <h1>Ascendant Sagittaire</h1>
@@ -136,8 +147,14 @@ footer{padding:35px 0 55px;text-align:right;color:#c9b9bd;font-size:16px;font-we
 </div>
 </div></section>
 
-
-<section class="bio-alpha"><div class="wrap"><div class="bio-alpha-box"><div class="bio-photo"><img src="aurelia-alkemia.png" alt="Aurélia, fondatrice de la Méthode ALKÉMIA"></div><div><div class="eyebrow">QUI SE CACHE DERRIÈRE ALKÉMIA ?</div><h2>Je suis Aurélia.</h2><p><strong>Experte en Reprogrammation Neuro-Identitaire et fondatrice de la Méthode ALKÉMIA.</strong></p><p>Je ne lis pas un thème astral pour te raconter qui tu es.</p><p>Je m’en sers comme d’une <strong>cartographie ultra-précise pour repérer ce qui est déjà codé chez toi : tes ressources, tes potentiels, mais aussi les programmes qui peuvent encore t’empêcher d’y accéder pleinement.</strong></p><p>Après 17 ans comme cadre territoriale et un burn-out qui a complètement rebattu les cartes, j’ai créé ALKÉMIA autour d’une conviction très simple : <strong>tu n’as pas besoin de devenir quelqu’un d’autre pour créer la vie que tu veux. Tu as besoin de te libérer de programmes qui ne t’appartiennent pas.</strong></p><p>Aujourd’hui, <strong>j’ai accompagné plus de 200 femmes</strong> à transformer les programmes qui les maintenaient dans les mêmes schémas pour leur permettre de <strong>déployer pleinement tous leurs potentiels.</strong></p></div></div></div></section>
+<section class="section">
+<div class="wrap">
+<div style="text-align:center">
+<a class="btn" download="" href="tes-money-codes-sagittaire.pdf">TÉLÉCHARGER MON MONEY CODE EN PDF →</a>
+</div>
+</div>
+</section>
+<section class="bio-alpha"><div class="wrap"><div class="bio-alpha-box"><div class="bio-photo"><img alt="Aurélia, fondatrice de la Méthode ALKÉMIA" src="aurelia-alkemia.png"/></div><div><div class="eyebrow">QUI SE CACHE DERRIÈRE ALKÉMIA ?</div><h2>Je suis Aurélia.</h2><p><strong>Experte en Reprogrammation Neuro-Identitaire et fondatrice de la Méthode ALKÉMIA.</strong></p><p>Je ne lis pas un thème astral pour te raconter qui tu es.</p><p>Je m’en sers comme d’une <strong>cartographie ultra-précise pour repérer ce qui est déjà codé chez toi : tes ressources, tes potentiels, mais aussi les programmes qui peuvent encore t’empêcher d’y accéder pleinement.</strong></p><p>Après 17 ans comme cadre territoriale et un burn-out qui a complètement rebattu les cartes, j’ai créé ALKÉMIA autour d’une conviction très simple : <strong>tu n’as pas besoin de devenir quelqu’un d’autre pour créer la vie que tu veux. Tu as besoin de te libérer de programmes qui ne t’appartiennent pas.</strong></p><p>Aujourd’hui, <strong>j’ai accompagné plus de 200 femmes</strong> à transformer les programmes qui les maintenaient dans les mêmes schémas pour leur permettre de <strong>déployer pleinement tous leurs potentiels.</strong></p></div></div></div></section>
 <section class="cta"><div class="wrap"><div class="cta-box">
 <div class="eyebrow">ET MAINTENANT ?</div>
 <h2>Voir ton code, c’est une chose. Pouvoir réellement l’exploiter, c’en est une autre.</h2>
@@ -154,14 +171,12 @@ footer{padding:35px 0 55px;text-align:right;color:#c9b9bd;font-size:16px;font-we
 <div class="origin-cta-row">
 <a class="btn" href="https://alkemia.netlify.app/origine">DÉCOUVRIR ORIGINE →</a>
 <div class="candidate-cta-group">
-<a href="#candidature-origine" class="btn">CANDIDATER POUR ORIGINE →</a>
+<a class="btn" href="#candidature-origine">CANDIDATER POUR ORIGINE →</a>
 <p class="candidate-reassurance">Cette candidature ne t’engage à rien. Tu restes entièrement libre de rejoindre ORIGINE ou non après notre échange.</p>
 </div>
 </div>
 </div></div></section>
-
 <footer><div class="wrap">ALKÉMIA · Reprogrammation Neuro-Identitaire</div></footer>
-
 <script>
 document.addEventListener('DOMContentLoaded', function(){
   const buttons = Array.from(document.querySelectorAll('a')).filter(a =>
@@ -169,31 +184,46 @@ document.addEventListener('DOMContentLoaded', function(){
   );
   buttons.forEach(function(btn){
     btn.setAttribute('href','#');
-    btn.addEventListener('click', function(e){
+    btn.addEventListener('click', async function(e){
       e.preventDefault();
       let lead = {};
       try { lead = JSON.parse(localStorage.getItem('moneyCodesLead') || '{}'); } catch(e) {}
-      localStorage.setItem('origineCandidature', JSON.stringify({
-        prenom: lead.prenom || '',
-        email: lead.email || '',
-        telephone: lead.telephone || '',
-        ascendant: lead.ascendant || '',
-        offre: 'ORIGINE',
-        statut: 'candidature'
-      }));
-      const box = document.createElement('div');
-      box.style.cssText = 'margin:22px 0 0;padding:20px;border:1px solid rgba(233,168,180,.35);border-radius:18px;background:rgba(233,168,180,.07);text-align:center;color:#f4c6ce;font-weight:600;';
-      box.innerHTML = '✓ C’est envoyé.<br><span style="font-weight:400;color:#d7cbce">Je reviendrai personnellement vers toi pour qu’on puisse échanger.</span>';
-      const row = btn.closest('.origin-cta-row') || btn.parentElement;
-      if (!document.getElementById('origine-test-confirmation')) {
-        box.id = 'origine-test-confirmation';
-        row.insertAdjacentElement('afterend', box);
+      const payload = new URLSearchParams({
+        'form-name':'origine-candidature',
+        'prenom':lead.prenom || '',
+        'email':lead.email || '',
+        'telephone':lead.telephone || '',
+        'ascendant':lead.ascendant || '',
+        'offre':'ORIGINE',
+        'statut':'candidature',
+        'bot-field':''
+      });
+      const original=btn.textContent;
+      btn.textContent='ENVOI EN COURS…';
+      btn.style.pointerEvents='none';
+      try{
+        const res=await fetch('/',{
+          method:'POST',
+          headers:{'Content-Type':'application/x-www-form-urlencoded'},
+          body:payload.toString()
+        });
+        if(!res.ok) throw new Error('submission failed');
+        const box=document.createElement('div');
+        box.style.cssText='margin:22px 0 0;padding:20px;border:1px solid rgba(233,168,180,.35);border-radius:18px;background:rgba(233,168,180,.07);text-align:center;color:#f4c6ce;font-weight:600;';
+        box.innerHTML='✓ C’est envoyé.<br><span style="font-weight:400;color:#d7cbce">Je reviendrai personnellement vers toi pour qu’on puisse échanger.</span>';
+        const row=btn.closest('.origin-cta-row') || btn.parentElement;
+        if(!document.getElementById('origine-confirmation')){
+          box.id='origine-confirmation';
+          row.insertAdjacentElement('afterend',box);
+        }
+        btn.textContent='CANDIDATURE ENVOYÉE ✓';
+      }catch(err){
+        btn.textContent=original;
+        btn.style.pointerEvents='auto';
+        alert("Une erreur est survenue. Réessaie dans quelques instants.");
       }
-      btn.textContent = 'CANDIDATURE ENVOYÉE ✓';
-      btn.style.pointerEvents = 'none';
     });
   });
 });
 </script>
-
 </body></html>
